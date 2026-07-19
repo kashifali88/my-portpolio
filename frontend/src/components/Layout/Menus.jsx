@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaCamera } from "react-icons/fa";
 import {
   FcHome,
@@ -20,7 +20,7 @@ import {
   MessageSquareQuote,
   Mail,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const menuItems = [
   {
@@ -68,10 +68,17 @@ const menuItems = [
   },
 ];
 
-const Menus = ({ toggle }) => {
+
+const Menus = ({ toggle, setToggle }) => {
   const [profile, setProfile] = useState(localStorage.getItem("profile") || "/profile.jpg");
   const [error, setError] = useState("");
   const fileRef = useRef();
+  
+ const location = useLocation();
+   useEffect(() => {
+    setToggle(false);
+  }, [location.pathname]);
+
 
   // profile update
  const handleImageUpload = async (e) => {

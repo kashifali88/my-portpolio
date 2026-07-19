@@ -11,7 +11,7 @@ const Layout = ({children}) => {
       {/* Mobile Overlay */}
       {toggle && (
         <div
-          className="fixed inset-0 bg-black/40 z-90 lg:hidden"
+          className="fixed inset-0 bg-black/40 z-40 lg:hidden"
           onClick={() => setToggle(false)}
         />
       )}
@@ -64,7 +64,7 @@ const Layout = ({children}) => {
           />
         </div>
 
-        <Menus toggle={toggle} />
+        <Menus toggle={toggle} setToggle={setToggle} />
 
       </aside>
 
