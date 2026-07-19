@@ -21,6 +21,8 @@ import {
   Mail,
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { BadgeCheck } from "lucide-react";
+
 
 const menuItems = [
   {
@@ -58,6 +60,12 @@ const menuItems = [
     title: "Projects",
     icon: <FolderKanban size={22} />,
     path: "/projects"
+  },
+  {
+    id: 7,
+    title: "Certification",
+    icon: <BadgeCheck size={22} />,
+    path: "/certification"
   },
 
   {
@@ -159,7 +167,7 @@ const Menus = ({ toggle, setToggle }) => {
 
       {/* ================= Menu ================= */}
 
-      <div className="flex-1 mt-2 overflow-y-auto">
+      <div className="flex-1 mt-4 overflow-y-auto">
 
         {menuItems.map((item) => (
             
@@ -182,7 +190,7 @@ const Menus = ({ toggle, setToggle }) => {
               className={`flex items-center
               ${
                 toggle
-                  ? "gap-4 px-4 py-4"
+                  ? "gap-4 px-4 py-3"
                   : "justify-center py-4"
               }`}
             >
