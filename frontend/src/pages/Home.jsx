@@ -2,6 +2,7 @@ import React from "react";
 import TypeWriter from "typewriter-effect";
 import Resume from "../assets/docs/resume.txt";
 import { FaGithub, FaLinkedin, FaCode, FaDownload, FaWhatsapp } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -168,7 +169,7 @@ const Home = () => {
             "
           >
 
-
+            <Link to='/contact'>
             <button
               className="
               flex
@@ -186,6 +187,7 @@ const Home = () => {
             >
               Hire Me
             </button>
+            </Link>
 
 
 
