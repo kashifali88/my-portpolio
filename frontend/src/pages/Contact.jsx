@@ -12,7 +12,8 @@ const Contact = () => {
     {
       title: "Email",
       icon: <FaEnvelope />,
-      link: "mailto:kashifzan28406@gmail.com",
+      link:
+"mailto:kashifzan28406@gmail.com?subject=Hiring%20Opportunity&body=Hi%20Kashif,%20I%20would%20like%20to%20discuss%20a%20project.",
       color: "text-red-500"
     },
     {

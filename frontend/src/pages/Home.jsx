@@ -1,6 +1,6 @@
 import React from "react";
 import TypeWriter from "typewriter-effect";
-import Resume from "../assets/docs/resume.txt";
+import Resume from "../assets/docs/kashif_ali_cv.pdf";
 import { FaGithub, FaLinkedin, FaCode, FaDownload, FaWhatsapp } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
@@ -193,7 +193,7 @@ const Home = () => {
 
             <a
               href={Resume}
-              download="Kashif-Ali-Resume.txt"
+              download="Kashif-Ali-Resume.pdf"
             >
 
               <button
