@@ -12,6 +12,7 @@ import ecommerce2 from "../assets/projects/ecommerce2.png";
 import bluewood from "../assets/projects/bluewood.png";
 import Bookify from "../assets/projects/Bookify.png";
 import HobbSprings from "../assets/projects/HobbSprings.png";
+import oscar from "../assets/projects/oscar.jpeg"
 
 const projects = [
   {
@@ -48,6 +49,27 @@ const projects = [
     ],
     github: "https://github.com/kashifali88/KASHIF_BLOG_MERN",
     live: "https://kashif-blog-mern.onrender.com",
+  },
+  {
+    id: 10,
+    title: "Oscar MERN E-commerce",
+    image: oscar,
+    description:
+      "Oscar is a full-stack e-commerce web application built using the MERN stack. It provides a responsive shopping experience where users can explore products, view product details, manage their shopping cart, and complete purchases.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Vite",
+      "Cloudinary",
+      "Render",
+      "Stripe",
+      "JavaScript"
+    ],
+    github: "https://github.com/kashifali88/oscar",
+    live: "https://oscar-frontend-jdsv.onrender.com",
   },
 
   {
